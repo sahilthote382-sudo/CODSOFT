@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil Thote Portfolio</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+            scroll-behavior:smooth;
+        }
+
+        body{
+            background: linear-gradient(to right, #141e30, #243b55);
+            color:white;
+        }
+
+        header{
+            text-align:center;
+            padding:70px 20px;
+            background: linear-gradient(45deg,#ff416c,#ff4b2b);
+        }
+
+        header h1{
+            font-size:55px;
+            margin-bottom:10px;
+        }
+
+        header p{
+            font-size:22px;
+            margin-bottom:20px;
+        }
+
+        .btn{
+            display:inline-block;
+            padding:12px 25px;
+            margin:10px;
+            border-radius:30px;
+            text-decoration:none;
+            color:white;
+            background:#00c6ff;
+            transition:0.4s;
+            font-weight:bold;
+        }
+
+        .btn:hover{
+            background:#0072ff;
+            transform:scale(1.1);
+        }
+
+        section{
+            width:85%;
+            margin:30px auto;
+            padding:30px;
+            border-radius:20px;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            box-shadow:0 0 15px rgba(0,0,0,0.3);
+            transition:0.4s;
+        }
+
+        section:hover{
+            transform:translateY(-5px);
+        }
+
+        h2{
+            color:#00e5ff;
+            margin-bottom:20px;
+            font-size:32px;
+            text-align:center;
+        }
+
+        /* About */
+
+        #about{
+            text-align:center;
+        }
+
+        #about img{
+            width:220px;
+            height:220px;
+            border-radius:50%;
+            border:5px solid white;
+            margin-bottom:20px;
+            object-fit:cover;
+            transition:0.5s;
+        }
+
+        #about img:hover{
+            transform:scale(1.05);
+        }
+
+        /* Skills */
+
+        .skills-container{
+            display:flex;
+            flex-wrap:wrap;
+            gap:15px;
+            justify-content:center;
+        }
+
+        .skill{
+            background:#ff4b2b;
+            padding:12px 20px;
+            border-radius:25px;
+            transition:0.3s;
+        }
+
+        .skill:hover{
+            background:#00c6ff;
+            transform:scale(1.1);
+        }
+
+        /* Projects */
+
+        .project{
+            margin-top:20px;
+            padding:20px;
+            border-radius:15px;
+            background:rgba(0,0,0,0.3);
+            transition:0.4s;
+            text-align:center;
+        }
+
+        .project:hover{
+            transform:scale(1.02);
+        }
+
+        .project img{
+            width:100%;
+            max-width:400px;
+            margin-top:15px;
+            border-radius:10px;
+        }
+
+        /* Contact */
+
+        .contact{
+            text-align:center;
+        }
+
+        .contact p{
+            margin:10px 0;
+            font-size:18px;
+        }
+
+        /* Footer */
+
+        footer{
+            text-align:center;
+            padding:20px;
+            background:black;
+            margin-top:30px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <h1>Sahil Thote</h1>
+
+        <p>Web Developer | Programmer | AI & DS Student</p>
+
+        <a href="https://yourusername.github.io/portfolio-website/" class="btn" target="_blank">
+            FOR DEMO CLICK HERE
+        </a>
+
+        <a href="./Sahil_Thote_Resume.pdf.pdf" class="btn" download>
+            Download Resume
+        </a>
+
+    </header>
+
+    <!-- About Section -->
+
+    <section id="about">
+
+        <!-- YOUR PROFILE PHOTO -->
+
+        <img src="C:/Users/Sahil/OneDrive/Pictures/Documents/Desktop/html/D92E31D0-A9F2-4A32-B1D6-B2E014DB65C5.png" alt="Sahil Thote">
+
+        <h2>About Me</h2>
+
+        <p>
+            Hello! My name is Sahil Thote. I am currently pursuing a Bachelor of Technology (B.Tech)
+            in Artificial Intelligence and Data Science from Yeshwantrao Chavan College of Engineering (YCCE), Nagpur.
+            Currently, I am in my 2nd year of engineering. I am passionate about web development,
+            programming, and learning new technologies. I have skills in HTML, CSS, Python, SQL,
+            and C/C++ programming. I enjoy creating responsive and interactive websites while continuously
+            improving my technical and problem-solving abilities.
+        </p>
+
+    </section>
+
+    <!-- Skills Section -->
+
+    <section id="skills">
+
+        <h2>Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">Python</div>
+            <div class="skill">SQL</div>
+            <div class="skill">C/C++</div>
+            <div class="skill">Java</div>
+            <div class="skill">Web Development</div>
+            <div class="skill">Responsive Design</div>
+
+        </div>
+
+    </section>
+
+    <!-- Projects Section -->
+
+    <section id="projects">
+
+        <h2>Projects</h2>
+
+        <div class="project">
+
+            <h3>Tic Tac Toe Game</h3>
+
+            <p>
+                A fun two-player Tic Tac Toe game developed using HTML, CSS, and JavaScript.
+            </p>
+
+            <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420" alt="Project 1">
+
+        </div>
+
+        <div class="project">
+
+            <h3>Portfolio Website</h3>
+
+            <p>
+                A responsive personal portfolio website showcasing skills, projects, and resume.
+            </p>
+
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="Project 2">
+
+        </div>
+
+    </section>
+
+    <!-- Resume Section -->
+
+    <section id="resume">
+
+        <h2>Resume</h2>
+
+        <p>
+            Click below to download my resume.
+        </p>
+
+        <br>
+
+        <a href="./Sahil_Thote_Resume.pdf.pdf" class="btn" download>
+            Download Resume
+        </a>
+
+    </section>
+
+    <!-- Contact Section -->
+
+    <section class="contact">
+
+        <h2>Contact Me</h2>
+
+        <p>📧 Email: sahilthote382@gmail.com</p>
+
+        <p>📱 Phone: +91 9699919385</p>
+
+        <p>📍 Nagpur, India</p>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 Sahil Thote | Web Development Internship Project
+        </p>
+
+    </footer>
+
+</body>
+</html>
