@@ -1,0 +1,1492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sahil Thote | AI & Data Science Portfolio</title>
+  
+  <!-- Tailwind CSS V4 CDN -->
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #fbfbfa;
+      color: #1c1c1a;
+      overflow-x: hidden;
+    }
+
+    .font-mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* Grid mesh background */
+    .grid-pattern {
+      background-size: 40px 40px;
+      background-image: 
+        linear-gradient(to right, rgba(230, 230, 225, 0.45) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(230, 230, 225, 0.45) 1px, transparent 1px);
+    }
+
+    /* Hide default scrollbars but keep custom looks */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f4f4f0;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #d4d4cb;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #babab0;
+    }
+
+    /* Print styling stylesheet */
+    @media print {
+      body {
+        background: white !important;
+        color: black !important;
+      }
+      .print\:hidden {
+        display: none !important;
+      }
+      .print\:block {
+        display: block !important;
+      }
+      .grid-pattern {
+        background-image: none !important;
+      }
+    }
+  </style>
+</head>
+<body class="grid-pattern">
+
+  <!-- ==========================================================================
+       1. PRINTABLE RESUME (Hidden on screen, shown when printing)
+       ========================================================================== -->
+  <div class="hidden print:block p-8 bg-white text-black max-w-[21cm] mx-auto text-xs leading-relaxed">
+    <div class="border-b-2 border-slate-800 pb-5 flex flex-col sm:flex-row justify-between items-baseline gap-4">
+      <div>
+        <h1 class="text-3xl font-extrabold tracking-tight uppercase text-slate-900">Sahil Thote</h1>
+        <p class="text-sm font-semibold text-slate-700 mt-1 uppercase font-mono tracking-wide">AI & Data Science Student</p>
+      </div>
+      <div class="text-right text-[10px] font-mono leading-relaxed text-slate-600 sm:self-end">
+        <p>Nagpur, India 441110</p>
+        <p>Phone: +91 9699919385 | Email: sahilthote382@gmail.com</p>
+        <p>GitHub: github.com/sahilthote</p>
+      </div>
+    </div>
+
+    <div class="my-6">
+      <h2 class="text-xs font-bold text-slate-800 uppercase tracking-wider border-b border-slate-300 pb-1 mb-2">Summary</h2>
+      <p class="text-slate-700 text-[11px] leading-relaxed">
+        Enthusiastic student in Artificial Intelligence and Data Science, with a strong foundation in Python and SQL. Recognized for adaptability and collaborative skills, ready to tackle programming challenges and contribute to impactful projects.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-12 gap-6">
+      <div class="col-span-8 flex flex-col gap-5">
+        <div>
+          <h2 class="text-xs font-bold text-slate-800 uppercase tracking-wider border-b border-slate-300 pb-1 mb-3">Professional Experience</h2>
+          <div>
+            <div class="flex justify-between font-bold text-slate-900 text-[11px]">
+              <span>Internship Student — <span class="text-slate-600 font-semibold">codesoft</span></span>
+              <span class="font-mono text-[9px] text-slate-500">05/2026 - 06/2026</span>
+            </div>
+            <ul class="mt-1.5 list-disc list-inside flex flex-col gap-1 text-[10.5px] text-slate-700">
+              <li>Successfully completed online internship focusing on web development solutions.</li>
+              <li>Developed multiple responsive projects and completed technical tasks within schedule.</li>
+              <li>Assisted in developing and prototyping software solutions for client requirements.</li>
+              <li>Maintained highly positive and active working relationships with fellow interns and management.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-xs font-bold text-slate-800 uppercase tracking-wider border-b border-slate-300 pb-1 mb-3">Education & Training</h2>
+          <div class="flex flex-col gap-4">
+            <div>
+              <div class="flex justify-between font-bold text-slate-900 text-[11px]">
+                <span>Bachelor of Technology: Artificial Intelligence And Data Science</span>
+                <span class="font-mono text-[9px] text-slate-500">Expected in 09/2028</span>
+              </div>
+              <p class="text-[10px] font-semibold text-slate-600 mt-0.5 uppercase tracking-wide">Yeshwantrao Chavan College of Engineering (YCCE) — Nagpur</p>
+              <p class="text-[10px] font-mono text-emerald-850 font-bold mt-0.5">Grade: 8.4 GPA (Ranked in Top 10% of class)</p>
+            </div>
+            <div>
+              <div class="flex justify-between font-bold text-slate-900 text-[11px]">
+                <span>12th Class: Science</span>
+                <span class="font-mono text-[9px] text-slate-500">07/2024</span>
+              </div>
+              <p class="text-[10px] font-semibold text-slate-600 mt-0.5 uppercase tracking-wide">Late Bhaiyyasaheb Urkande Jr. College — Waigaon, Wardha</p>
+              <p class="text-[10px] font-mono text-emerald-850 font-bold mt-0.5">Grade: 80.33% (Ranked in Top 10% of class)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-span-4 border-l border-slate-200 pl-4 flex flex-col gap-5">
+        <div>
+          <h2 class="text-xs font-bold text-slate-800 uppercase tracking-wider border-b border-slate-300 pb-1 mb-3">Core Skills</h2>
+          <div class="flex flex-col gap-2 font-mono text-[10px] text-slate-800">
+            <div class="flex justify-between border-b border-dashed border-slate-100 pb-0.5"><span>Python Programming</span><span>90%</span></div>
+            <div class="flex justify-between border-b border-dashed border-slate-100 pb-0.5"><span>C/C++ Programming</span><span>75%</span></div>
+            <div class="flex justify-between border-b border-dashed border-slate-100 pb-0.5"><span>SQL Databases</span><span>85%</span></div>
+            <div class="flex justify-between border-b border-dashed border-slate-100 pb-0.5"><span>Problem-solving</span><span>92%</span></div>
+            <div class="flex justify-between border-b border-dashed border-slate-100 pb-0.5"><span>Web Development</span><span>80%</span></div>
+            <div class="flex justify-between border-b border-dashed border-slate-100 pb-0.5"><span>Data Structures</span><span>82%</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ==========================================================================
+       2. INTERACTIVE MAIN PORTFOLIO VIEW (Hidden during print)
+       ========================================================================== -->
+  <div id="screen-portfolio-container" class="print:hidden min-h-screen flex flex-col">
+    
+    <!-- HEADER & NAVIGATION -->
+    <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[#fbfbfa]/90 backdrop-blur-md border-b border-[#e6e6e1]/80 shadow-xs py-3">
+      <div class="max-w-6xl mx-auto px-6 flex items-center justify-between">
+        
+        <!-- Logo -->
+        <div onclick="scrollToSection('overview')" class="flex items-center gap-2 cursor-pointer select-none">
+          <div class="bg-[#1c1c1a] text-white p-2 rounded-lg flex items-center justify-center shadow-xs">
+            <i data-lucide="terminal" class="w-5 h-5 text-amber-200"></i>
+          </div>
+          <div>
+            <span class="font-extrabold text-[#1c1c1a] tracking-tight">Sahil Thote</span>
+            <div class="flex items-center gap-1.5 leading-none">
+              <span class="text-[10px] font-mono text-[#787870] uppercase">B.Tech AI & DS</span>
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Desktop Navigation links -->
+        <nav class="hidden md:flex items-center gap-1.5">
+          <button onclick="scrollToSection('overview')" id="nav-btn-overview" class="nav-tab-btn relative px-4 py-2 text-sm font-semibold rounded-lg transition-colors text-[#1c1c1a] bg-[#f1f1eb] border border-[#e2e2da]">Overview</button>
+          <button onclick="scrollToSection('resume')" id="nav-btn-resume" class="nav-tab-btn relative px-4 py-2 text-sm font-semibold rounded-lg transition-colors text-[#60605a] hover:text-[#1c1c1a]">Resume</button>
+          <button onclick="scrollToSection('sandbox')" id="nav-btn-sandbox" class="nav-tab-btn relative px-4 py-2 text-sm font-semibold rounded-lg transition-colors text-[#60605a] hover:text-[#1c1c1a]">Sandbox</button>
+          <button onclick="scrollToSection('contact')" id="nav-btn-contact" class="nav-tab-btn relative px-4 py-2 text-sm font-semibold rounded-lg transition-colors text-[#60605a] hover:text-[#1c1c1a]">Contact</button>
+        </nav>
+
+        <!-- Dynamic Action buttons -->
+        <div class="hidden md:flex items-center gap-3">
+          <button onclick="window.print()" class="flex items-center gap-2 px-4 py-2 bg-[#1c1c1a] hover:bg-neutral-800 text-[#fbfbfa] text-xs font-mono font-bold tracking-wider uppercase rounded-lg shadow-sm hover:shadow-md transition-all cursor-pointer">
+            <i data-lucide="file-text" class="w-3.5 h-3.5 text-amber-200"></i>
+            Print CV
+          </button>
+        </div>
+
+        <!-- Mobile toggle menu -->
+        <div class="md:hidden">
+          <button onclick="toggleMobileMenu()" class="p-2 text-[#60605a] hover:text-[#1c1c1a] hover:bg-[#f1f1eb] rounded-lg transition-all">
+            <i id="mobile-menu-icon" data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Dropdown panel -->
+      <div id="mobile-nav-menu" class="hidden md:hidden border-t border-[#e6e6e1]/80 bg-[#fbfbfa]/95 backdrop-blur-md overflow-hidden">
+        <div class="px-6 py-4 flex flex-col gap-2">
+          <button onclick="scrollToSection('overview'); toggleMobileMenu();" class="w-full text-left px-4 py-3 text-sm font-semibold rounded-lg text-[#1c1c1a] hover:bg-[#f1f1eb]">Overview</button>
+          <button onclick="scrollToSection('resume'); toggleMobileMenu();" class="w-full text-left px-4 py-3 text-sm font-semibold rounded-lg text-[#1c1c1a] hover:bg-[#f1f1eb]">Resume</button>
+          <button onclick="scrollToSection('sandbox'); toggleMobileMenu();" class="w-full text-left px-4 py-3 text-sm font-semibold rounded-lg text-[#1c1c1a] hover:bg-[#f1f1eb]">Technical Sandbox</button>
+          <button onclick="scrollToSection('contact'); toggleMobileMenu();" class="w-full text-left px-4 py-3 text-sm font-semibold rounded-lg text-[#1c1c1a] hover:bg-[#f1f1eb]">Contact</button>
+          <div class="border-t border-[#e6e6e1] pt-3 mt-1">
+            <button onclick="window.print(); toggleMobileMenu();" class="w-full justify-center flex items-center gap-2 px-4 py-3 bg-[#1c1c1a] text-white text-xs font-mono font-bold uppercase tracking-wider rounded-lg">
+              <i data-lucide="file-text" class="w-4 h-4 text-amber-200"></i>
+              Print Resume
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- HERO BIO SECTION -->
+    <section id="overview" class="relative pt-32 pb-20 overflow-hidden">
+      <div class="absolute top-0 right-1/4 w-96 h-96 bg-amber-100/30 rounded-full blur-3xl -z-10"></div>
+      <div class="absolute top-1/2 left-10 w-80 h-80 bg-emerald-500/5 rounded-full blur-3xl -z-10"></div>
+      
+      <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+        <!-- Bio and Intro tags -->
+        <div class="md:col-span-7 flex flex-col gap-6">
+          <div class="flex items-center gap-2 self-start px-3 py-1 bg-amber-50 border border-amber-200/60 rounded-full">
+            <i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-500 animate-spin"></i>
+            <span class="text-[11px] font-mono font-bold uppercase tracking-wider text-amber-800">Available for Internships</span>
+          </div>
+
+          <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight text-[#1c1c1a] leading-[1.05]">
+            Hi, I'm <span class="relative underline decoration-amber-400 decoration-wavy decoration-3">Sahil Thote</span>
+          </h1>
+
+          <p class="text-lg md:text-xl font-medium text-[#c2410c] font-mono leading-none">
+            AI & Data Science Student
+          </p>
+
+          <p class="text-[#52524e] text-base leading-relaxed">
+            Enthusiastic student in Artificial Intelligence and Data Science, with a strong foundation in Python and SQL. Recognized for adaptability and collaborative skills, ready to tackle programming and AI challenges while contributing to innovative real-world projects.
+          </p>
+
+          <!-- Highlights cards -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div class="flex items-center gap-3 p-3 bg-white border border-[#e6e6e2] rounded-xl shadow-xs">
+              <div class="w-8 h-8 rounded-lg bg-[#f1f1eb] flex items-center justify-center text-[#52524e]">
+                <i data-lucide="map-pin" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <p class="text-[10px] font-mono leading-none text-[#787870] uppercase">Location</p>
+                <p class="text-xs font-semibold text-[#1c1c1a] mt-0.5">Nagpur, India 441110</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 p-3 bg-white border border-[#e6e6e2] rounded-xl shadow-xs">
+              <div class="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center">
+                <i data-lucide="award" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <p class="text-[10px] font-mono leading-none text-[#787870] uppercase">Education</p>
+                <p class="text-xs font-semibold text-[#1c1c1a] mt-0.5">YCCE Nagpur • Top 10%</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-4 mt-2">
+            <button onclick="scrollToSection('sandbox')" class="px-6 py-3 bg-[#1c1c1a] hover:bg-neutral-800 text-white text-sm font-semibold rounded-xl transition-all shadow-sm cursor-pointer">
+              Explore AI Sandbox
+            </button>
+            <button onclick="scrollToSection('contact')" class="px-6 py-3 bg-white border border-[#d4d4cb] hover:bg-[#fbfbfa] text-[#1c1c1a] text-sm font-semibold rounded-xl transition-all shadow-xs cursor-pointer">
+              Get in Touch
+            </button>
+          </div>
+
+          <div class="flex items-center gap-5 mt-4 pt-5 border-t border-[#e2e2da]">
+            <a href="mailto:sahilthote382@gmail.com" class="flex items-center gap-2 text-xs font-mono text-[#52524e] hover:text-[#1c1c1a] transition-colors">
+              <i data-lucide="mail" class="w-4 h-4 text-neutral-400"></i>
+              sahilthote382@gmail.com
+            </a>
+            <a href="tel:+919699919385" class="flex items-center gap-2 text-xs font-mono text-[#52524e] hover:text-[#1c1c1a] transition-colors">
+              <i data-lucide="phone" class="w-4 h-4 text-neutral-400"></i>
+              +91 9699919385
+            </a>
+          </div>
+        </div>
+
+        <!-- Interactive Drag & Drop / Portait column -->
+        <div class="md:col-span-5 flex justify-center">
+          <div class="relative w-80 h-[400px] group">
+            <div class="absolute inset-0 bg-amber-400/10 rounded-[28px] translate-x-3 translate-y-3 -z-10 group-hover:translate-x-4 group-hover:translate-y-4 transition-transform duration-300"></div>
+            
+            <div id="drop-zone" class="relative h-full w-full rounded-[24px] overflow-hidden border-2 border-[#d4d4cb] hover:border-[#1c1c1a] transition-all duration-300 bg-white shadow-lg flex flex-col justify-between">
+              
+              <!-- Core Portrait Representation Area -->
+              <div id="portrait-core" class="relative w-full h-[350px] bg-gradient-to-br from-[#1c1c1a] via-[#2d2d2a] to-[#3a3a37] flex flex-col items-center justify-center p-6 overflow-hidden select-none cursor-pointer">
+                
+                <!-- Display Image Container (Initially hidden, displays if image is loaded) -->
+                <img id="user-portrait-img" class="hidden absolute inset-0 w-full h-full object-cover" src="" alt="Sahil Portrait">
+
+                <!-- Draft Smart SVG Vector Drawing if no photo -->
+                <div id="vector-portrait" class="flex flex-col items-center justify-center w-full h-full">
+                  <svg viewBox="0 0 100 100" class="w-36 h-36 z-10 transition-transform duration-300 group-hover:scale-105">
+                    <path d="M28 35 C28 20, 72 20, 72 35 L75 40 L25 40 Z" fill="#0c0d10" />
+                    <path d="M30 35 L70 35 L70 65 C70 80, 30 80, 30 65 Z" fill="#eac39d" />
+                    <path d="M28 35 Q35 25, 52 28 Q65 24, 72 33 Q64 35, 55 33 Q45 35, 28 35 Z" fill="#181a1f" />
+                    <path d="M49 55 L51 55 L51 59 L49 59 Z" fill="#dcaf88" />
+                    <g>
+                      <circle cx="41" cy="48" r="7" fill="#121316" stroke="#b4926a" stroke-width="0.8" />
+                      <circle cx="59" cy="48" r="7" fill="#121316" stroke="#b4926a" stroke-width="0.8" />
+                      <path d="M48 47 L52 47" stroke="#b4926a" stroke-width="1" />
+                    </g>
+                    <path d="M38 59 Q48 57, 50 59 Q52 57, 62 59 Q50 62, 38 59 Z" fill="#1c1c1f" />
+                    <path d="M43 65 Q50 69, 57 65" stroke="#be896c" stroke-width="1.2" fill="none" />
+                    <path d="M45 70 L55 70 L56 78 L44 78 Z" fill="#e2b489" />
+                    <path d="M22 78 C22 75, 78 75, 78 78 L84 100 L16 100 Z" fill="#e7e5dc" />
+                    <path d="M46 82 L46 92" stroke="#bab8b0" stroke-width="1" />
+                    <path d="M54 82 L54 94" stroke="#bab8b0" stroke-width="1" />
+                  </svg>
+                  <p class="text-[10px] text-sky-400 font-extrabold font-sans mt-3 text-center uppercase tracking-wider">
+                    Stand Out From The Noise
+                  </p>
+                </div>
+
+                <!-- Hover overlay layer -->
+                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col items-center justify-center text-center p-4">
+                  <i data-lucide="upload" class="w-8 h-8 text-amber-200 mb-2"></i>
+                  <span class="text-white text-xs font-bold font-mono">Upload / Drag Photo</span>
+                  <span class="text-neutral-300 text-[10px] mt-1">Accepts any custom portrait photograph</span>
+                </div>
+              </div>
+
+              <!-- Loader bar controls -->
+              <div class="h-[52px] bg-[#fcfcfb] border-t border-[#e2e2da] px-4 flex items-center justify-between">
+                <button onclick="triggerFileSelect()" class="flex items-center gap-1.5 text-xs font-bold text-[#1c1c1a] hover:text-[#c2410c] cursor-pointer">
+                  <i data-lucide="upload" class="w-3.5 h-3.5"></i>
+                  <span id="upload-status-lbl">Upload Profile Photo</span>
+                </button>
+                <button id="reset-image-btn" onclick="clearProfilePhoto(event)" class="hidden flex items-center gap-1 px-2.5 py-1 bg-neutral-100 hover:bg-neutral-200 text-neutral-600 font-bold font-mono text-[9px] uppercase tracking-wider rounded-md border border-[#e2e2da]">
+                  Reset
+                </button>
+              </div>
+
+            </div>
+          </div>
+          <!-- Hidden Native File selector -->
+          <input type="file" id="photo-file-selector" accept="image/*" class="hidden" onchange="loadPhotoFromSelector(this)">
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CURRICULUM VITAE TIMELINE & SKILLS -->
+    <section id="resume" class="py-20 bg-[#f4f4f0]/50 border-t border-b border-[#e6e6e2]">
+      <div class="max-w-6xl mx-auto px-6">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+          <div>
+            <span class="font-mono text-xs text-[#787870] uppercase font-bold tracking-widest leading-none">Academic Timeline</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-[#1c1c1a] mt-2">Resume & Experience</h2>
+          </div>
+          <div class="h-0.5 flex-1 bg-[#e2e2da] mx-0 md:mx-8 hidden lg:block"></div>
+          <div class="text-xs font-mono font-bold text-[#5c5c56]">
+            Active Enrollment: YCCE Nagpur
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+          
+          <!-- Experience & Education timeline tracks -->
+          <div class="lg:col-span-7 flex flex-col gap-10">
+            
+            <!-- Professional Experience block -->
+            <div>
+              <div class="flex items-center gap-2.5 mb-6">
+                <div class="w-8 h-8 rounded-lg bg-[#1c1c1a] text-white flex items-center justify-center">
+                  <i data-lucide="briefcase" class="w-4 h-4 text-amber-200"></i>
+                </div>
+                <h3 class="text-xl font-bold text-[#1c1c1a]">Professional Experience</h3>
+              </div>
+
+              <div class="relative pl-6 border-l-2 border-[#e2e2da] ml-4 flex flex-col gap-8">
+                <div class="relative">
+                  <span class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full border-4 border-[#fbfbfa] bg-[#1c1c1a]"></span>
+                  <div class="bg-white border border-[#e6e6e2] rounded-2xl p-5 shadow-xs hover:shadow-md transition-all">
+                    <div class="flex flex-wrap justify-between items-start gap-2">
+                      <div>
+                        <h4 class="font-bold text-base text-[#1c1c1a]">Internship Student</h4>
+                        <p class="text-xs font-mono font-bold text-[#c2410c] mt-0.5 uppercase tracking-wide">
+                          codesoft • <span class="text-neutral-500 hover:underline">Nagpur, India (Online)</span>
+                        </p>
+                      </div>
+                      <span class="text-[11px] font-mono font-bold bg-[#f1f1eb] text-neutral-700 px-2.5 py-1 rounded-md border border-[#e2e2da]">
+                        05/2026 - 06/2026
+                      </span>
+                    </div>
+                    <ul class="mt-4 flex flex-col gap-2.5">
+                      <li class="flex items-start gap-2.5 text-neutral-600 text-xs leading-relaxed">
+                        <span class="text-[#c2410c] font-bold mt-1 shrink-0">•</span>
+                        <span>Successfully completed online internship focusing on web development solutions.</span>
+                      </li>
+                      <li class="flex items-start gap-2.5 text-neutral-600 text-xs leading-relaxed">
+                        <span class="text-[#c2410c] font-bold mt-1 shrink-0">•</span>
+                        <span>Developed multiple responsive projects and completed technical tasks within schedule.</span>
+                      </li>
+                      <li class="flex items-start gap-2.5 text-neutral-600 text-xs leading-relaxed">
+                        <span class="text-[#c2410c] font-bold mt-1 shrink-0">•</span>
+                        <span>Assisted in developing and prototyping software solutions for client requirements.</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Academic track details -->
+            <div>
+              <div class="flex items-center gap-2.5 mb-6">
+                <div class="w-8 h-8 rounded-lg bg-[#1c1c1a] text-white flex items-center justify-center">
+                  <i data-lucide="graduation-cap" class="w-4 h-4 text-emerald-200"></i>
+                </div>
+                <h3 class="text-xl font-bold text-[#1c1c1a]">Education Track</h3>
+              </div>
+
+              <div class="relative pl-6 border-l-2 border-[#e2e2da] ml-4 flex flex-col gap-8">
+                <!-- B.Tech degree -->
+                <div class="relative">
+                  <span class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full border-4 border-[#fbfbfa] bg-[#1c1c1a]"></span>
+                  <div class="bg-white border border-[#e6e6e2] rounded-2xl p-5 shadow-xs hover:shadow-md transition-all">
+                    <div class="flex flex-wrap justify-between items-start gap-2">
+                      <div>
+                        <h4 class="font-bold text-base text-[#1c1c1a]">B.Tech: Artificial Intelligence & Data Science</h4>
+                        <p class="text-xs font-mono font-bold text-[#15803d] mt-0.5 uppercase tracking-wide">
+                          Yeshwantrao Chavan College of Engineering (YCCE) • <span class="text-neutral-500">Nagpur</span>
+                        </p>
+                      </div>
+                      <div class="flex flex-col items-end gap-1.5">
+                        <span class="text-[11px] font-mono font-bold bg-[#f1f1eb] text-neutral-700 px-2.5 py-1 rounded-md border border-[#e2e2da]">
+                          Expected in 09/2028
+                        </span>
+                        <span class="text-[10px] font-mono font-bold text-white bg-emerald-650 px-2 py-0.5 rounded-sm bg-emerald-750">
+                          8.4 GPA
+                        </span>
+                      </div>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-[#f1f1eb] flex flex-col gap-2">
+                      <div class="flex items-start gap-2 text-neutral-600 text-xs leading-relaxed">
+                        <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-emerald-600 mt-0.5 shrink-0"></i>
+                        <span>Ranked in the top 10% of the course batch and specialized in data structures.</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Jr College Science -->
+                <div class="relative">
+                  <span class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full border-4 border-[#fbfbfa] bg-[#1c1c1a]"></span>
+                  <div class="bg-white border border-[#e6e6e2] rounded-2xl p-5 shadow-xs hover:shadow-md transition-all">
+                    <div class="flex flex-wrap justify-between items-start gap-2">
+                      <div>
+                        <h4 class="font-bold text-base text-[#1c1c1a]">12th Class: Science stream</h4>
+                        <p class="text-xs font-mono font-bold text-[#15803d] mt-0.5 uppercase tracking-wide">
+                          Late Bhaiyyasaheb Urkande Jr. College • <span class="text-neutral-500">Wardha</span>
+                        </p>
+                      </div>
+                      <div class="flex flex-col items-end gap-1.5">
+                        <span class="text-[11px] font-mono font-bold bg-[#f1f1eb] text-neutral-700 px-2.5 py-1 rounded-md border border-[#e2e2da]">
+                          07/2024
+                        </span>
+                        <span class="text-[10px] font-mono font-bold text-white bg-emerald-650 px-2 py-0.5 rounded-sm bg-emerald-750">
+                          80.33%
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Dynamic interactive Skills panel -->
+          <div class="lg:col-span-5 flex flex-col gap-6">
+            <div class="bg-white border border-[#e6e6e2] rounded-2xl p-6 shadow-xs sticky top-24">
+              <div class="flex items-center justify-between mb-5 border-b border-slate-100 pb-4">
+                <div class="flex items-center gap-2">
+                  <i data-lucide="star" class="w-5 h-5 text-amber-500 fill-amber-500"></i>
+                  <h3 class="font-bold text-lg text-[#1c1c1a]">Skills Inventory</h3>
+                </div>
+                <span class="text-xs font-mono font-bold bg-[#1c1c1a] text-amber-200 px-2 py-0.5 rounded-sm">
+                  Interactive Filter
+                </span>
+              </div>
+
+              <!-- Filter Navigation menu -->
+              <div class="flex flex-wrap gap-1.5 mb-6">
+                <button onclick="filterSkills('all')" id="tab-skill-all" class="skill-tab-btn px-3 py-1.5 rounded-lg text-xs font-semibold border bg-[#1c1c1a] border-[#1c1c1a] text-white cursor-pointer">All</button>
+                <button onclick="filterSkills('programming')" id="tab-skill-programming" class="skill-tab-btn px-3 py-1.5 rounded-lg text-xs font-semibold border bg-white border-[#e2e2da] text-neutral-600 hover:border-black cursor-pointer">Programming</button>
+                <button onclick="filterSkills('database')" id="tab-skill-database" class="skill-tab-btn px-3 py-1.5 rounded-lg text-xs font-semibold border bg-white border-[#e2e2da] text-neutral-600 hover:border-black cursor-pointer">Database</button>
+                <button onclick="filterSkills('concepts')" id="tab-skill-concepts" class="skill-tab-btn px-3 py-1.5 rounded-lg text-xs font-semibold border bg-white border-[#e2e2da] text-neutral-600 hover:border-black cursor-pointer">Concepts</button>
+              </div>
+
+              <!-- Progress bar rendering area -->
+              <div id="skills-progress-container" class="flex flex-col gap-5">
+                <!-- Hardcoded items structure with custom data-attributes for filtering -->
+                <div class="skill-item-bar flex flex-col gap-1.5" data-skill-category="programming">
+                  <div class="flex items-center justify-between text-xs font-bold text-neutral-800">
+                    <span>Python Programming</span>
+                    <span class="font-mono text-neutral-500">90%</span>
+                  </div>
+                  <div class="w-full h-2 bg-[#f1f1eb] rounded-full border border-neutral-100">
+                    <div class="h-full rounded-full bg-amber-500" style="width: 90%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item-bar flex flex-col gap-1.5" data-skill-category="programming">
+                  <div class="flex items-center justify-between text-xs font-bold text-neutral-800">
+                    <span>C/C++ Architecture</span>
+                    <span class="font-mono text-neutral-500">75%</span>
+                  </div>
+                  <div class="w-full h-2 bg-[#f1f1eb] rounded-full border border-neutral-100">
+                    <div class="h-full rounded-full bg-amber-500" style="width: 75%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item-bar flex flex-col gap-1.5" data-skill-category="database">
+                  <div class="flex items-center justify-between text-xs font-bold text-neutral-800">
+                    <span>SQL & Relational Queries</span>
+                    <span class="font-mono text-neutral-500">85%</span>
+                  </div>
+                  <div class="w-full h-2 bg-[#f1f1eb] rounded-full border border-neutral-100">
+                    <div class="h-full rounded-full bg-sky-500" style="width: 85%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item-bar flex flex-col gap-1.5" data-skill-category="concepts">
+                  <div class="flex items-center justify-between text-xs font-bold text-neutral-800">
+                    <span>Data Structures & DSA</span>
+                    <span class="font-mono text-neutral-500">82%</span>
+                  </div>
+                  <div class="w-full h-2 bg-[#f1f1eb] rounded-full border border-neutral-100">
+                    <div class="h-full rounded-full bg-purple-500" style="width: 82%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item-bar flex flex-col gap-1.5" data-skill-category="concepts">
+                  <div class="flex items-center justify-between text-xs font-bold text-neutral-800">
+                    <span>Problem Solving</span>
+                    <span class="font-mono text-neutral-500">92%</span>
+                  </div>
+                  <div class="w-full h-2 bg-[#f1f1eb] rounded-full border border-neutral-100">
+                    <div class="h-full rounded-full bg-emerald-500" style="width: 92%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card helper stats block -->
+              <div class="mt-8 pt-5 border-t border-slate-100 bg-amber-50/50 p-6 -mx-6 -mb-6 rounded-b-2xl text-[11px] text-[#8c520a] leading-relaxed flex items-start gap-2.5">
+                <span>💡</span>
+                <span>
+                  <strong>AI & Data Science Specialty:</strong> Sahil's portfolio showcases algorithm design (Python) coupled with SQL querying. Explore the live playgrounds in the interactive sandbox below!
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- TECHNICAL INTERACTIVE SANDBOX PLAYGROUND -->
+    <section id="sandbox" class="py-20 bg-white border-b border-[#e6e6e2]">
+      <div class="max-w-6xl mx-auto px-6">
+        
+        <div class="text-center max-w-2xl mx-auto mb-14 animate-fade-in">
+          <span class="font-mono text-xs text-[#c2410c] uppercase font-bold tracking-widest leading-none">Interactive Playground</span>
+          <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-[#1c1c1a] mt-2">Technical AI & DS Sandbox</h2>
+          <p class="text-neutral-500 text-sm mt-3.5 leading-relaxed">
+            As an AI & DS major, I construct systems that blend computation with math. Interact with these highly responsive logic generators to witness operations run in real-time.
+          </p>
+
+          <!-- Toggle controls for interactive panels -->
+          <div class="flex justify-center flex-wrap gap-2 mt-8">
+            <button onclick="switchSandbox('neural')" id="sand-tab-neural" class="sand-nav-btn flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold border bg-[#1c1c1a] border-[#1c1c1a] text-amber-200 cursor-pointer shadow-md">
+              <i data-lucide="brain-circuit" class="w-4 h-4"></i>
+              Neural Net Sim
+            </button>
+            <button onclick="switchSandbox('sql')" id="sand-tab-sql" class="sand-nav-btn flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold border bg-[#fbfbfa] border-[#e2e2da] text-neutral-600 hover:border-black cursor-pointer">
+              <i data-lucide="database" class="w-4 h-4"></i>
+              SQL Database Shell
+            </button>
+            <button onclick="switchSandbox('python')" id="sand-tab-python" class="sand-nav-btn flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold border bg-[#fbfbfa] border-[#e2e2da] text-neutral-600 hover:border-black cursor-pointer">
+              <i data-lucide="code" class="w-4 h-4"></i>
+              Python Sorting Sim
+            </button>
+          </div>
+        </div>
+
+        <!-- Central Sandbox Rendering Container Frame Box -->
+        <div class="bg-[#fcfcfb] border border-[#e6e6e2] rounded-3xl p-6 sm:p-8 shadow-xs">
+          
+          <!-- 1. NEURAL NETWORK LANDING SIM -->
+          <div id="sandbox-frame-neural" class="sand-content-frame grid grid-cols-1 lg:grid-cols-12 gap-8">
+            <!-- Control slider parameters -->
+            <div class="lg:col-span-4 flex flex-col gap-5 bg-white p-5 border border-[#e6e6e2] rounded-2xl shadow-xs">
+              <div class="border-b border-neutral-100 pb-3">
+                <h4 class="font-bold text-sm text-[#1c1c1a]">Hyperparameters</h4>
+                <p class="text-[11px] text-neutral-400">Tweak neural constraints</p>
+              </div>
+
+              <!-- Dataset geometry type select -->
+              <div class="flex flex-col gap-1.5">
+                <span class="text-[11px] font-mono font-bold uppercase text-[#787870]">Complexity Level</span>
+                <div class="grid grid-cols-2 gap-2">
+                  <button onclick="setNeuralDataset('linear')" id="nn-ds-linear" class="py-2 text-[11px] font-semibold border rounded-lg bg-[#1c1c1a] text-amber-200 font-bold border-black">Linearly Separable</button>
+                  <button onclick="setNeuralDataset('xor')" id="nn-ds-xor" class="py-2 text-[11px] font-semibold border rounded-lg bg-white border-[#d4d4cb] text-neutral-650 hover:border-black">XOR Segregation</button>
+                </div>
+              </div>
+
+              <!-- Slider a-Value Learning rate parameters -->
+              <div class="flex flex-col gap-1.5">
+                <div class="flex justify-between text-[11px] font-mono font-bold text-[#787870]">
+                  <span>Learning Rate (&alpha;)</span>
+                  <span id="lr-val-dis" class="font-bold">0.1</span>
+                </div>
+                <input id="nn-lr-range" type="range" min="0.01" max="0.5" step="0.05" value="0.1" class="w-full accent-[#1c1c1a]" oninput="updateLR(this.value)">
+              </div>
+
+              <!-- Metric displays -->
+              <div class="grid grid-cols-2 gap-3 bg-[#fbfbfa] border border-[#e2e2da] p-3 rounded-xl font-mono">
+                <div>
+                  <span class="text-[9px] text-neutral-450 block font-bold">Epoch Tracker</span>
+                  <span id="nn-epoch-lbl" class="text-xl font-extrabold text-neutral-900 mt-1 block">#0</span>
+                </div>
+                <div>
+                  <span class="text-[9px] text-neutral-450 block font-bold">Training Loss</span>
+                  <span id="nn-loss-lbl" class="text-xl font-extrabold text-amber-700 mt-1 block">0.654</span>
+                </div>
+              </div>
+
+              <!-- Click controls triggers -->
+              <div class="grid grid-cols-2 gap-2 pt-2 border-t border-slate-100">
+                <button onclick="toggleNNTraining()" id="nn-train-btn" class="flex-1 py-2.5 rounded-xl bg-[#1c1c1a] text-amber-200 text-xs font-bold hover:bg-neutral-850 flex items-center justify-center gap-1.5 shadow-sm">
+                  <i data-lucide="play" class="w-3.5 h-3.5"></i> Play Sim
+                </button>
+                <button onclick="resetNNSimulator()" class="py-2.5 rounded-xl bg-neutral-100 hover:bg-neutral-200 border border-[#e2e2da] text-xs font-semibold flex items-center justify-center gap-1.5">
+                  <i data-lucide="rotate-ccw" class="w-3.5 h-3.5"></i> Reset
+                </button>
+              </div>
+            </div>
+
+            <!-- Visualization displays -->
+            <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+              
+              <!-- Core connectivity weight plot SVG -->
+              <div class="bg-white border border-[#e6e6e2] rounded-2xl p-5 flex flex-col items-center justify-center h-[320px] relative">
+                <span class="absolute top-3 left-4 text-[9px] font-mono font-bold text-neutral-400 uppercase">Interactive Connection Wires</span>
+                <svg viewBox="0 0 160 120" class="w-full h-full max-h-[250px] mt-4">
+                  <!-- synaptic connections loops -->
+                  <g stroke="#d4d4cb" stroke-width="0.7" id="neural-drawings-lines">
+                    <line x1="20" y1="35" x2="80" y2="25" class="synaptic-wire"></line>
+                    <line x1="20" y1="35" x2="80" y2="60" class="synaptic-wire"></line>
+                    <line x1="20" y1="35" x2="80" y2="95" class="synaptic-wire"></line>
+                    <line x1="20" y1="85" x2="80" y2="25" class="synaptic-wire"></line>
+                    <line x1="20" y1="85" x2="80" y2="60" class="synaptic-wire"></line>
+                    <line x1="20" y1="85" x2="80" y2="95" class="synaptic-wire"></line>
+
+                    <line x1="80" y1="25" x2="140" y2="60" class="synaptic-wire" stroke-width="1.2"></line>
+                    <line x1="80" y1="60" x2="140" y2="60" class="synaptic-wire" stroke-width="1.2"></line>
+                    <line x1="80" y1="95" x2="140" y2="60" class="synaptic-wire" stroke-width="1.2"></line>
+                  </g>
+
+                  <!-- Network neurons circles -->
+                  <circle cx="20" cy="35" r="5" fill="#1c1c1a"></circle>
+                  <text x="20" y="37" text-anchor="middle" fill="white" font-size="4" font-weight="bold">X1</text>
+                  
+                  <circle cx="20" cy="85" r="5" fill="#1c1c1a"></circle>
+                  <text x="20" y="87" text-anchor="middle" fill="white" font-size="4" font-weight="bold">X2</text>
+
+                  <circle cx="80" cy="25" r="5.5" fill="#f59e0b" stroke="white" stroke-width="0.8"></circle>
+                  <circle cx="80" cy="60" r="5.5" fill="#f59e0b" stroke="white" stroke-width="0.8"></circle>
+                  <circle cx="80" cy="95" r="5.5" fill="#f59e0b" stroke="white" stroke-width="0.8"></circle>
+
+                  <circle cx="140" cy="60" r="6" fill="#10b981" stroke="white" stroke-width="1"></circle>
+                  <text x="140" y="62" text-anchor="middle" fill="white" font-size="4.5" font-weight="bold">Y</text>
+                </svg>
+              </div>
+
+              <!-- Output classification mesh space -->
+              <div class="bg-white border border-[#e6e6e2] rounded-2xl p-5 flex flex-col items-center justify-center h-[320px] relative">
+                <span class="absolute top-3 left-4 text-[9px] font-mono font-bold text-neutral-400 uppercase">Boundary Decision convergence</span>
+                <div id="neural-mesh-space" class="relative w-full h-full max-w-[220px] aspect-square rounded-xl border border-neutral-100 overflow-hidden mt-6 bg-slate-50">
+                  <div id="boundary-gradient-fill" class="absolute inset-0 transition-opacity duration-500" style="background: linear-gradient(135deg, rgba(251, 191, 36, 0.12) 50%, rgba(16, 185, 129, 0.12) 50%)"></div>
+                  <!-- Scattered data point outputs dynamically drawn here by vanilla script -->
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <!-- 2. SQL QUERY TERMINAL SANDBOX (Initially hidden) -->
+          <div id="sandbox-frame-sql" class="sand-content-frame hidden grid grid-cols-1 lg:grid-cols-12 gap-8">
+            <!-- Selector controls column -->
+            <div class="lg:col-span-5 flex flex-col gap-5">
+              <div class="flex flex-col gap-2">
+                <span class="text-[11px] font-mono font-bold uppercase text-[#787870]">Query Presets</span>
+                <div id="sql-presets-rows" class="flex flex-col gap-2.5">
+                  <button onclick="loadSQLPreset('select name, raw_gpa, class_rank from student_stats where raw_gpa >= 8.4;')" class="w-full text-left p-3 text-xs bg-white hover:bg-neutral-50 border border-[#e6e6e2] rounded-xl flex items-start gap-2.5">
+                    <span class="w-5 h-5 rounded-md bg-indigo-50 flex items-center justify-center text-indigo-700 font-bold shrink-0">P1</span>
+                    <span class="text-neutral-700 font-medium">Find students with GPA &gt;= 8.4 (Meets Sahil's tier)</span>
+                  </button>
+                  <button onclick="loadSQLPreset('select name, major, class_rank from student_stats where class_rank <= 12 order by class_rank asc;')" class="w-full text-left p-3 text-xs bg-white hover:bg-neutral-50 border border-[#e6e6e2] rounded-xl flex items-start gap-2.5">
+                    <span class="w-5 h-5 rounded-md bg-indigo-50 flex items-center justify-center text-indigo-700 font-bold shrink-0">P2</span>
+                    <span class="text-neutral-700 font-medium font-medium">Select Top 10% class performers</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Textarea query input -->
+              <div class="flex flex-col gap-2 relative">
+                <div class="flex items-center justify-between">
+                  <span class="text-[11px] font-mono font-bold uppercase text-[#787870]">Interactive SQL editor</span>
+                  <span class="text-[9px] font-mono text-neutral-450">Schema: STUDENT_STATS</span>
+                </div>
+                <textarea id="sql-editor-input" rows="4" class="w-full text-xs font-mono bg-neutral-900 text-sky-200 border border-neutral-800 p-4 rounded-xl leading-relaxed focus:outline-none">select name, major, raw_gpa, class_rank from student_stats where raw_gpa >= 8.40;</textarea>
+                <button onclick="executeSQLQuery()" class="absolute bottom-4 right-4 px-4.5 py-1.8 bg-indigo-600 hover:bg-indigo-500 text-white font-mono font-bold text-xs rounded-lg shadow-sm">
+                  Run SQL
+                </button>
+              </div>
+            </div>
+
+            <!-- Query responses schema tables output -->
+            <div class="lg:col-span-7 flex flex-col gap-4">
+              <div id="sql-alert-box" class="hidden p-3 bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs rounded-xl flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i>
+                <span id="sql-alert-text">Query ran successfully in 0.42ms.</span>
+              </div>
+
+              <div class="bg-white border border-[#e6e6e2] rounded-2xl p-5 overflow-hidden shadow-xs">
+                <div class="flex items-center justify-between mb-3 border-b border-slate-100 pb-2.5">
+                  <span class="text-[9px] font-mono font-bold text-neutral-400 uppercase">Records view sheet</span>
+                  <span class="text-[9px] font-mono italic text-neutral-400">student_stats_view</span>
+                </div>
+
+                <div class="overflow-x-auto">
+                  <table class="w-full text-left border-collapse" id="sql-output-gird">
+                    <!-- Hydrated by script -->
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- 3. PYTHON BUBBLE/SELECTION SORT DEEP DIVE (Initially hidden) -->
+          <div id="sandbox-frame-python" class="sand-content-frame hidden grid grid-cols-1 lg:grid-cols-12 gap-8">
+            <!-- Select and code highlight columns -->
+            <div class="lg:col-span-5 flex flex-col gap-4">
+              <div>
+                <span class="text-[11px] font-mono font-bold uppercase text-[#787870]">Select Sorting Algorithm</span>
+                <div class="grid grid-cols-2 gap-2 mt-2">
+                  <button onclick="setSortingAlgo('bubble')" id="py-btn-bubble" class="py-2 text-[11px] font-mono font-bold border rounded-lg bg-[#1c1c1a] text-white select-none">Bubble Sort</button>
+                  <button onclick="setSortingAlgo('selection')" id="py-btn-selection" class="py-2 text-[11px] font-mono font-bold border rounded-lg bg-white border-[#d4d4cb] text-neutral-600 hover:border-black select-none">Selection Sort</button>
+                </div>
+              </div>
+
+              <!-- Highlighting block -->
+              <div class="bg-neutral-900 border border-neutral-800 rounded-xl p-4 overflow-hidden relative font-mono text-[10px] leading-relaxed text-slate-300">
+                <span class="absolute top-2 right-3 font-mono text-[8px] text-neutral-600 uppercase">python_executor.py</span>
+                
+                <div id="bubble-code-block" class="flex flex-col gap-0.5 mt-2">
+                  <div class="py-0.5 px-2 py-cl" id="by-cl-0">def bubble_sort(arr):</div>
+                  <div class="py-0.5 px-2 py-cl" id="by-cl-1">    n = len(arr)</div>
+                  <div class="py-0.5 px-2 py-cl" id="by-cl-2">    for i in range(n):</div>
+                  <div class="py-0.5 px-2 py-cl" id="by-cl-3">        for j in range(0, n-i-1):</div>
+                  <div class="py-0.5 px-2 py-cl" id="by-cl-4">            # Compare adjacent elements</div>
+                  <div class="py-0.5 px-2 py-cl" id="by-cl-5">            if arr[j] &gt; arr[j+1]:</div>
+                  <div class="py-0.5 px-2 py-cl" id="by-cl-6">                arr[j], arr[j+1] = arr[j+1], arr[j] # SWAP</div>
+                  <div class="py-0.5 px-2 py-cl" id="by-cl-7">    return arr</div>
+                </div>
+
+                <div id="selection-code-block" class="hidden flex flex-col gap-0.5 mt-2">
+                  <div class="py-0.5 px-2 py-cl" id="sy-cl-0">def selection_sort(arr):</div>
+                  <div class="py-0.5 px-2 py-cl" id="sy-cl-1">    n = len(arr)</div>
+                  <div class="py-0.5 px-2 py-cl" id="sy-cl-2">    for i in range(n):</div>
+                  <div class="py-0.5 px-2 py-cl" id="sy-cl-3">        min_idx = i</div>
+                  <div class="py-0.5 px-2 py-cl" id="sy-cl-4">        # Find minimum elements</div>
+                  <div class="py-0.5 px-2 py-cl" id="sy-cl-5">        for j in range(i+1, n):</div>
+                  <div class="py-0.5 px-2 py-cl" id="sy-cl-6">            if arr[j] &lt; arr[min_idx]:</div>
+                  <div class="py-0.5 px-2 py-cl" id="sy-cl-7">                min_idx = j</div>
+                  <div class="py-0.5 px-2 py-cl" id="sy-cl-8">        arr[i], arr[min_idx] = arr[min_idx], arr[i] # SWAP</div>
+                </div>
+              </div>
+
+              <!-- triggers play -->
+              <div class="grid grid-cols-2 gap-3 mt-1">
+                <button onclick="runSortingPlayback()" id="py-play-btn" class="flex items-center justify-center gap-1.5 py-2.5 bg-[#1c1c1a] hover:bg-neutral-850 text-emerald-300 font-bold font-mono rounded-xl text-xs cursor-pointer">
+                  <i data-lucide="play" class="w-3.5 h-3.5"></i> PLAY SORTING
+                </button>
+                <button onclick="shuffleSortingArray()" class="flex items-center justify-center gap-1.5 py-2.5 bg-neutral-100 hover:bg-neutral-200 text-neutral-700 font-semibold rounded-xl text-xs border border-[#e2e2da]">
+                  <i data-lucide="rotate-ccw" class="w-3.5 h-3.5"></i> Shuffle Data
+                </button>
+              </div>
+            </div>
+
+            <!-- Algorithmic visual chart displays column -->
+            <div class="lg:col-span-12 xl:col-span-7 bg-white border border-[#e6e6e2] rounded-2xl p-5 flex flex-col justify-between h-[320px]">
+              <div class="flex items-center justify-between border-b border-slate-100 pb-2.5">
+                <span class="text-[10px] font-mono font-bold text-neutral-400 uppercase">Array Registry Visualization</span>
+                <div class="flex items-center gap-2.5 text-[8.5px] font-mono text-neutral-450">
+                  <div class="flex items-center gap-1"><span class="w-2 rounded bg-indigo-500 h-2"></span>Evaluating</div>
+                  <div class="flex items-center gap-1"><span class="w-2 rounded bg-emerald-500 h-2"></span>Sorted</div>
+                </div>
+              </div>
+
+              <!-- Bars lists -->
+              <div id="py-bars-visualizer" class="flex items-end justify-between h-[180px] gap-2 px-3 pt-6">
+                <!-- Hydration loops -->
+              </div>
+
+              <p class="text-[10.5px] font-mono text-neutral-400 text-center select-none pt-4 bg-[#fbfbfa] border-t border-slate-50 -mx-5 -mb-5 p-4 rounded-b-2xl">
+                👉 Press <strong>PLAY SORTING</strong> to simulate linear loops indices.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- COLLABORATION CONTACT FORM -->
+    <section id="contact" class="py-22 bg-[#f4f4f0]/50 border-t border-[#e6e6e2] relative overflow-hidden">
+      <div class="absolute bottom-0 right-10 w-96 h-96 bg-amber-100/10 rounded-full blur-3xl -z-10"></div>
+      
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+          <div>
+            <span class="font-mono text-xs text-[#787870] uppercase font-bold tracking-widest leading-none">Connect with me</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-[#1c1c1a] mt-2">Get In Touch</h2>
+          </div>
+          <div class="h-0.5 flex-1 bg-[#e2e2da] mx-0 md:mx-8 hidden lg:block"></div>
+          <div class="text-xs font-mono font-bold text-[#5c5c56]">
+            Open directly for internships and project requests
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+          
+          <!-- Detailed contacts info sheets -->
+          <div class="lg:col-span-5 flex flex-col gap-6">
+            <div class="bg-white border border-[#e6e6e2] rounded-2xl p-6 shadow-xs">
+              <h3 class="font-bold text-lg text-[#1c1c1a] mb-4">Contact Information</h3>
+              <p class="text-neutral-500 text-xs leading-relaxed mb-6">
+                Are you looking for an adaptive and highly communicative engineering student to support your software development, SQL query optimizations, or Python data science pipelines? Reach out to me directly!
+              </p>
+
+              <div class="flex flex-col gap-4">
+                <a href="mailto:sahilthote382@gmail.com" class="flex items-center gap-4 p-3.5 bg-[#fbfbfa] hover:bg-neutral-50 border border-neutral-100 rounded-xl transition-all">
+                  <div class="w-10 h-10 rounded-lg bg-amber-50 text-[#c2410c] flex items-center justify-center">
+                    <i data-lucide="mail" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <p class="text-[10px] font-mono font-bold text-[#787870] uppercase leading-none">Email Address</p>
+                    <p class="text-xs font-semibold text-[#1c1c1a] mt-1.5">sahilthote382@gmail.com</p>
+                  </div>
+                </a>
+
+                <a href="tel:+919699919385" class="flex items-center gap-4 p-3.5 bg-[#fbfbfa] hover:bg-neutral-50 border border-neutral-100 rounded-xl transition-all">
+                  <div class="w-10 h-10 rounded-lg bg-emerald-50 text-emerald-700 flex items-center justify-center">
+                    <i data-lucide="phone" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <p class="text-[10px] font-mono font-bold text-[#787870] uppercase leading-none">Phone Contact</p>
+                    <p class="text-xs font-semibold text-[#1c1c1a] mt-1.5">+91 9699919385</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Placement status info block -->
+            <div class="bg-[#1c1c1a] text-[#fbfbfa] rounded-2xl p-5 border border-neutral-800 shadow-xs flex items-center gap-4">
+              <div class="bg-emerald-500/20 p-2.5 rounded-xl text-emerald-300">
+                <i data-lucide="sparkles" class="w-5 h-5 animate-pulse"></i>
+              </div>
+              <div>
+                <span class="text-[9px] font-mono text-emerald-400 font-bold uppercase block">Internship Availability</span>
+                <span class="text-xs font-medium text-neutral-300 mt-1 block">Actively seeking opportunities for Summer 2026 / 2027 classes.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sandbox form interface sheets -->
+          <div class="lg:col-span-7">
+            <div class="bg-white border border-[#e6e6e2] rounded-2xl p-6 sm:p-8 shadow-xs h-full">
+              
+              <!-- Form Frame layout -->
+              <form id="portfolio-contact-form" onsubmit="handleFormTransmission(event)" class="flex flex-col gap-4">
+                <div class="flex items-center gap-2 mb-2">
+                  <i data-lucide="message-square" class="w-5 h-5 text-amber-500"></i>
+                  <h3 class="font-bold text-lg text-[#1c1c1a]">Send a Direct Message</h3>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div class="flex flex-col gap-1.5">
+                    <label class="text-[10px] font-mono font-bold uppercase text-[#787870]">Your Name *</label>
+                    <input type="text" id="form-name" required placeholder="Sahil Thote" class="w-full text-xs px-4 py-3 bg-[#fbfbfa] border border-[#d4d4cb] rounded-xl focus:outline-none focus:border-[#1c1c1a]">
+                  </div>
+
+                  <div class="flex flex-col gap-1.5">
+                    <label class="text-[10px] font-mono font-bold uppercase text-[#787870]">Email Address *</label>
+                    <input type="email" id="form-email" required placeholder="you@domain.com" class="w-full text-xs px-4 py-3 bg-[#fbfbfa] border border-[#d4d4cb] rounded-xl focus:outline-none focus:border-[#1c1c1a]">
+                  </div>
+                </div>
+
+                <div class="flex flex-col gap-1.5">
+                  <label class="text-[10px] font-mono font-bold uppercase text-[#787870]">Detailed Message *</label>
+                  <textarea id="form-message" rows="4" required placeholder="Write internship specs or design descriptions here..." class="w-full text-xs px-4 py-4 bg-[#fbfbfa] border border-[#d4d4cb] rounded-xl focus:outline-none leading-relaxed resize-none"></textarea>
+                </div>
+
+                <button type="submit" id="form-submit-btn" class="mt-2 w-full sm:w-auto self-end px-6 py-3 bg-[#1c1c1a] hover:bg-neutral-805 text-amber-200 text-sm font-semibold rounded-xl flex items-center justify-center gap-2 transition-all cursor-pointer">
+                  <span>Transmit Message</span>
+                  <i data-lucide="send" class="w-4 h-4 text-amber-200"></i>
+                </button>
+              </form>
+
+              <!-- Success Alert overlays sheets -->
+              <div id="form-success-alert" class="hidden flex flex-col items-center justify-center text-center py-10">
+                <div class="w-16 h-16 rounded-full bg-emerald-100 border border-emerald-200 text-emerald-700 flex items-center justify-center mb-5 animate-bounce">
+                  <i data-lucide="check" class="w-8 h-8"></i>
+                </div>
+                <h3 class="text-2xl font-extrabold text-[#1c1c1a] tracking-tight">Transmission Complete!</h3>
+                <p class="text-neutral-500 text-sm mt-3.5 max-w-sm mx-auto leading-relaxed">
+                  Thank you for connecting. Your message has been routed successfully. Sahil will review and write back within 24 working hours.
+                </p>
+                <button onclick="resetContactForm()" class="mt-6 px-5 py-2.5 bg-neutral-100 border border-neutral-200 text-[#1c1c1a] text-xs font-semibold rounded-xl">
+                  Send New Message
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- FOOTER WATERMARK -->
+    <footer class="bg-[#1c1c1a] border-t border-neutral-800 py-12 text-sm text-neutral-400 mt-auto">
+      <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+        <div>
+          <div onclick="scrollToSection('overview')" class="flex items-center justify-center md:justify-start gap-2 text-white font-extrabold pb-1.5 cursor-pointer">
+            <i data-lucide="terminal" class="w-4 h-4 text-amber-200"></i>
+            <span>Sahil Thote</span>
+          </div>
+          <p class="text-[11px] text-[#8c8c80] font-mono leading-relaxed mt-1">
+            © 2026 Sahil Thote. B.Tech Artificial Intelligence and Data Science. Yeshwantrao Chavan College of Engineering (YCCE).
+          </p>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-6">
+          <button onclick="scrollToSection('overview')" class="text-xs font-semibold text-neutral-400 hover:text-white transition-colors cursor-pointer uppercase">Overview</button>
+          <button onclick="scrollToSection('resume')" class="text-xs font-semibold text-neutral-400 hover:text-white transition-colors cursor-pointer uppercase">Resume</button>
+          <button onclick="scrollToSection('sandbox')" class="text-xs font-semibold text-neutral-400 hover:text-white transition-colors cursor-pointer uppercase">Technical Sandbox</button>
+          <button onclick="scrollToSection('contact')" class="text-xs font-semibold text-neutral-400 hover:text-white transition-colors cursor-pointer uppercase">Contact</button>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+
+  <!-- ==========================================================================
+       3. CLIENT-SIDE ARCHITECTURE JAVASCRIPT SYSTEM
+       ========================================================================== -->
+  <script>
+    // Initialize Lucide SVG icons on page load
+    document.addEventListener("DOMContentLoaded", function() {
+      lucide.createIcons();
+      initDraftPoints();
+      hydrateSortingBars();
+      hydrateSQLTable(studentDB);
+      checkStoredProfilePhoto();
+    });
+
+    // Toggle Navigation and window scrolling routines
+    function scrollToSection(id) {
+      document.querySelectorAll(".nav-tab-btn").forEach(btn => {
+        btn.classList.remove('text-[#1c1c1a]', 'bg-[#f1f1eb]', 'border', 'border-[#e2e2da]');
+        btn.classList.add('text-[#60605a]');
+      });
+      const targBtn = document.getElementById('nav-btn-' + id);
+      if (targBtn) {
+        targBtn.classList.remove('text-[#60605a]');
+        targBtn.classList.add('text-[#1c1c1a]', 'bg-[#f1f1eb]', 'border', 'border-[#e2e2da]');
+      }
+      
+      const element = document.getElementById(id);
+      if (element) {
+        const offset = 80;
+        const bodyRect = document.body.getBoundingClientRect().top;
+        const elementRect = element.getBoundingClientRect().top;
+        const elementPosition = elementRect - bodyRect;
+        const offsetPosition = elementPosition - offset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    }
+
+    let mobileMenuOpened = false;
+    function toggleMobileMenu() {
+      mobileMenuOpened = !mobileMenuOpened;
+      const el = document.getElementById('mobile-nav-menu');
+      const icon = document.getElementById('mobile-menu-icon');
+      if (mobileMenuOpened) {
+        el.classList.remove('hidden');
+        icon.setAttribute('data-lucide', 'x');
+      } else {
+        el.classList.add('hidden');
+        icon.setAttribute('data-lucide', 'menu');
+      }
+      lucide.createIcons();
+    }
+
+
+    /* ==========================================================================
+       A. INTERACTIVE PORTRAIT PROFILE UPLOADER WITH LOCAL STORAGE
+       ========================================================================== */
+    function triggerFileSelect() {
+      document.getElementById('photo-file-selector').click();
+    }
+
+    function checkStoredProfilePhoto() {
+      const saved = localStorage.getItem('sahil_portfolio_profile_photo');
+      if (saved) {
+        applyProfilePhoto(saved);
+      }
+    }
+
+    function loadPhotoFromSelector(input) {
+      if (input.files && input.files[0]) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          localStorage.setItem('sahil_portfolio_profile_photo', e.target.result);
+          applyProfilePhoto(e.target.result);
+        };
+        reader.readAsDataURL(input.files[0]);
+      }
+    }
+
+    function applyProfilePhoto(b64) {
+      document.getElementById('user-portrait-img').src = b64;
+      document.getElementById('user-portrait-img').classList.remove('hidden');
+      document.getElementById('vector-portrait').classList.add('hidden');
+      document.getElementById('reset-image-btn').classList.remove('hidden');
+      document.getElementById('upload-status-lbl').innerText = "Change Photo";
+    }
+
+    function clearProfilePhoto(event) {
+      event.stopPropagation();
+      localStorage.removeItem('sahil_portfolio_profile_photo');
+      document.getElementById('user-portrait-img').src = "";
+      document.getElementById('user-portrait-img').classList.add('hidden');
+      document.getElementById('vector-portrait').classList.remove('hidden');
+      document.getElementById('reset-image-btn').classList.add('hidden');
+      document.getElementById('upload-status-lbl').innerText = "Upload Profile Photo";
+    }
+
+
+    /* ==========================================================================
+       B. INTERACTIVE RESUME SKILL FILTERS METERS
+       ========================================================================== */
+    function filterSkills(category) {
+      document.querySelectorAll(".skill-tab-btn").forEach(btn => {
+        btn.classList.remove('bg-[#1c1c1a]', 'border-[#1c1c1a]', 'text-white');
+        btn.classList.add('bg-white', 'border-[#e2e2da]', 'text-neutral-600');
+      });
+      document.getElementById('tab-skill-' + category).classList.add('bg-[#1c1c1a]', 'border-[#1c1c1a]', 'text-white');
+
+      document.querySelectorAll(".skill-item-bar").forEach(item => {
+        const categoryMatch = item.getAttribute('data-skill-category');
+        if (category === 'all' || categoryMatch === category) {
+          item.style.display = 'flex';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+
+
+    /* ==========================================================================
+       C. INTERACTIVE TECHNICAL AI & DS SANDBOX SHIELDS
+       ========================================================================== */
+    function switchSandbox(frameName) {
+      document.querySelectorAll(".sand-nav-btn").forEach(btn => {
+        btn.classList.remove('bg-[#1c1c1a]', 'border-[#1c1c1a]', 'text-amber-200', 'text-[#818cf8]', 'text-emerald-300', 'shadow-md');
+        btn.classList.add('bg-[#fbfbfa]', 'border-[#e2e2da]', 'text-neutral-600');
+      });
+
+      const activeBtn = document.getElementById('sand-tab-' + frameName);
+      if (frameName === 'neural') activeBtn.classList.add('bg-[#1c1c1a]', 'border-[#1c1c1a]', 'text-amber-200', 'shadow-md');
+      if (frameName === 'sql') activeBtn.classList.add('bg-[#1c1c1a]', 'border-[#1c1c1a]', 'text-[#818cf8]', 'shadow-md');
+      if (frameName === 'python') activeBtn.classList.add('bg-[#1c1c1a]', 'border-[#1c1c1a]', 'text-emerald-300', 'shadow-md');
+
+      document.querySelectorAll(".sand-content-frame").forEach(frame => {
+        frame.classList.add('hidden');
+      });
+      document.getElementById('sandbox-frame-' + frameName).classList.remove('hidden');
+    }
+
+
+    /* -- PLAYGROUND MODULE 1: NEURAL NET -- */
+    let neuralPoints = [];
+    let trainingInterval = null;
+    let isTrainingNN = false;
+    let nnEpochCount = 0;
+    let nnLossValue = 0.654;
+    let datasetMode = "linear";
+    let learningRateNN = 0.1;
+
+    function initDraftPoints() {
+      neuralPoints = [];
+      const space = document.getElementById('neural-mesh-space');
+      space.querySelectorAll('.scatter-point').forEach(p => p.remove());
+
+      if (datasetMode === 'linear') {
+        for (let i = 0; i < 28; i++) {
+          neuralPoints.push({ x: Math.random() * 40 + 8, y: Math.random() * 40 + 8, label: 0 });
+          neuralPoints.push({ x: Math.random() * 40 + 52, y: Math.random() * 40 + 52, label: 1 });
+        }
+      } else {
+        for (let i = 0; i < 15; i++) {
+          neuralPoints.push({ x: Math.random() * 32 + 8, y: Math.random() * 32 + 60, label: 0 });
+          neuralPoints.push({ x: Math.random() * 32 + 60, y: Math.random() * 32 + 8, label: 0 });
+          neuralPoints.push({ x: Math.random() * 32 + 8, y: Math.random() * 32 + 8, label: 1 });
+          neuralPoints.push({ x: Math.random() * 32 + 60, y: Math.random() * 32 + 60, label: 1 });
+        }
+      }
+
+      neuralPoints.forEach(pt => {
+        const dot = document.createElement('div');
+        dot.className = "scatter-point absolute w-3 h-3 rounded-full border border-white shadow-xs -translate-x-1/2 -translate-y-1/2 transition-transform duration-300 hover:scale-130";
+        if (pt.label === 0) {
+          dot.className += " bg-amber-500";
+        } else {
+          dot.className += " bg-emerald-500";
+        }
+        dot.style.left = pt.x + "%";
+        dot.style.top = pt.y + "%";
+        space.appendChild(dot);
+      });
+    }
+
+    function setNeuralDataset(mode) {
+      stopNNTraining();
+      datasetMode = mode;
+      document.getElementById('nn-ds-linear').className = mode === 'linear' 
+        ? "py-2 text-[11px] font-semibold border rounded-lg bg-[#1c1c1a] text-amber-200 border-black" 
+        : "py-2 text-[11px] font-semibold border rounded-lg bg-white border-[#d4d4cb] text-neutral-600 hover:border-black";
+      document.getElementById('nn-ds-xor').className = mode === 'xor' 
+        ? "py-2 text-[11px] font-semibold border rounded-lg bg-[#1c1c1a] text-amber-200 border-black" 
+        : "py-2 text-[11px] font-semibold border rounded-lg bg-white border-[#d4d4cb] text-neutral-600 hover:border-black";
+
+      nnEpochCount = 0;
+      nnLossValue = mode === 'linear' ? 0.654 : 0.741;
+      document.getElementById('nn-epoch-lbl').innerText = "#0";
+      document.getElementById('nn-loss-lbl').innerText = nnLossValue;
+      document.getElementById('boundary-gradient-fill').style.opacity = "0.2";
+      initDraftPoints();
+    }
+
+    function updateLR(val) {
+      learningRateNN = parseFloat(val);
+      document.getElementById('lr-val-dis').innerText = val;
+    }
+
+    function toggleNNTraining() {
+      if (isTrainingNN) {
+        stopNNTraining();
+      } else {
+        startNNTraining();
+      }
+    }
+
+    function startNNTraining() {
+      isTrainingNN = true;
+      document.getElementById('nn-train-btn').innerHTML = `<i data-lucide="pause" class="w-3.5 h-3.5"></i> Pause Sim`;
+      lucide.createIcons();
+
+      trainingInterval = setInterval(() => {
+        nnEpochCount++;
+        // exponential loss decaying simulations
+        let multiplier = datasetMode === 'xor' ? 0.003 : 0.015;
+        let delta = learningRateNN * multiplier;
+        nnLossValue = Math.max(0.012, nnLossValue - delta);
+        nnLossValue = parseFloat((nnLossValue + (Math.random() * 0.002 - 0.001)).toFixed(4));
+        
+        document.getElementById('nn-epoch-lbl').innerText = "#" + nnEpochCount;
+        document.getElementById('nn-loss-lbl').innerText = nnLossValue;
+
+        // adjust visual lines connectivity vibrations
+        document.querySelectorAll(".synaptic-wire").forEach(wire => {
+          wire.setAttribute('stroke-width', Math.random() * 2 + 0.5);
+          wire.setAttribute('stroke', `rgba(245, 158, 11, ${Math.min(0.9, 0.4 + nnEpochCount * 0.01)})`);
+        });
+
+        const rot = 135 + Math.min(nnEpochCount, 60) * 0.4;
+        const opacityFit = Math.min(0.32, 0.12 + nnEpochCount * 0.004);
+        const borderFill = document.getElementById('boundary-gradient-fill');
+        if (datasetMode === 'linear') {
+          borderFill.style.background = `linear-gradient(${rot}deg, rgba(251, 191, 36, ${opacityFit}) 50%, rgba(16, 185, 129, ${opacityFit}) 50%)`;
+        } else {
+          borderFill.style.background = `radial-gradient(circle, rgba(251, 191, 36, ${opacityFit}) 45%, rgba(16, 185, 129, ${opacityFit}) 45%)`;
+        }
+      }, 120);
+    }
+
+    function stopNNTraining() {
+      isTrainingNN = false;
+      if (trainingInterval) clearInterval(trainingInterval);
+      document.getElementById('nn-train-btn').innerHTML = `<i data-lucide="play" class="w-3.5 h-3.5"></i> Play Sim`;
+      lucide.createIcons();
+    }
+
+    function resetNNSimulator() {
+      stopNNTraining();
+      setNeuralDataset(datasetMode);
+    }
+
+
+    /* -- PLAYGROUND MODULE 2: SQL DATABASE SHELL -- */
+    const studentDB = [
+      { student_id: 101, name: 'Sahil Thote', major: 'AI & Data Science', raw_gpa: 8.40, class_rank: 8, top_10_percent: 'YES' },
+      { student_id: 102, name: 'Ananya Sharma', major: 'AI & Data Science', raw_gpa: 8.92, class_rank: 2, top_10_percent: 'YES' },
+      { student_id: 103, name: 'Rohit Jaiswal', major: 'Computer Science', raw_gpa: 7.85, class_rank: 34, top_10_percent: 'NO' },
+      { student_id: 104, name: 'Keya Patel', major: 'Information Tech', raw_gpa: 8.12, class_rank: 18, top_15_percent: 'NO' },
+      { student_id: 105, name: 'Tushar Chawla', major: 'AI & Data Science', raw_gpa: 8.56, class_rank: 6, top_10_percent: 'YES' },
+      { student_id: 106, name: 'Divya Nagpal', major: 'Computer Science', raw_gpa: 6.95, class_rank: 82, top_10_percent: 'NO' },
+    ];
+
+    function hydrateSQLTable(data) {
+      const table = document.getElementById('sql-output-gird');
+      table.innerHTML = "";
+      if (data.length === 0) {
+        table.innerHTML = `<tr><td class="text-center py-8 text-neutral-400">Empty Record Set</td></tr>`;
+        return;
+      }
+
+      // table headers
+      const hr = document.createElement('tr');
+      hr.className = "border-b border-[#e2e2da] text-neutral-500 font-mono text-[9px] uppercase font-bold tracking-wider";
+      Object.keys(data[0]).forEach(k => {
+        hr.innerHTML += `<th class="pb-2">${k}</th>`;
+      });
+      table.appendChild(hr);
+
+      // rows
+      data.forEach(row => {
+        const tr = document.createElement('tr');
+        tr.className = "hover:bg-neutral-50 border-b border-slate-100 divide-y font-sans text-xs text-[#1c1c1a]";
+        Object.values(row).forEach(v => {
+          if (v === 'Sahil Thote') {
+            tr.innerHTML += `<td class="py-2.5 font-bold"><span class="bg-amber-100 text-neutral-900 border border-amber-300 px-1.5 py-0.5 rounded">${v}</span></td>`;
+          } else {
+            tr.innerHTML += `<td class="py-2.5">${v}</td>`;
+          }
+        });
+        table.appendChild(tr);
+      });
+    }
+
+    function loadSQLPreset(q) {
+      document.getElementById('sql-editor-input').value = q;
+      executeSQLQuery();
+    }
+
+    function executeSQLQuery() {
+      const rawText = document.getElementById('sql-editor-input').value.toLowerCase();
+      const alertBox = document.getElementById('sql-alert-box');
+      const alertText = document.getElementById('sql-alert-text');
+      alertBox.classList.add('hidden');
+
+      if (!rawText.includes('select') || !rawText.includes('from student_stats')) {
+        alertBox.className = "p-3 bg-red-50 border border-red-200 text-red-800 text-xs rounded-xl flex items-center gap-2";
+        alertText.innerText = "Error: Applet parser only queries SELECT column FROM STUDENT_STATS";
+        alertBox.classList.remove('hidden');
+        return;
+      }
+
+      let queryResults = [...studentDB];
+
+      // where filters
+      if (rawText.includes('where')) {
+        if (rawText.includes('raw_gpa >= 8.4') || rawText.includes('gpa >= 8.4')) {
+          queryResults = queryResults.filter(r => r.raw_gpa >= 8.40);
+        } else if (rawText.includes('class_rank <= 12')) {
+          queryResults = queryResults.filter(r => r.class_rank <= 12);
+        } else if (rawText.includes('sahil')) {
+          queryResults = queryResults.filter(r => r.name.includes('Sahil'));
+        }
+      }
+
+      // order sorting
+      if (rawText.includes('order by')) {
+        if (rawText.includes('asc')) {
+          queryResults.sort((a,b) => a.class_rank - b.class_rank);
+        } else if (rawText.includes('desc')) {
+          queryResults.sort((a,b) => b.class_rank - a.class_rank);
+        }
+      }
+
+      alertBox.className = "p-3 bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs rounded-xl flex items-center gap-2";
+      alertText.innerText = `SQL query ran successfully: returned ${queryResults.length} rows in 0.35ms.`;
+      alertBox.classList.remove('hidden');
+      hydrateSQLTable(queryResults);
+    }
+
+
+    /* -- PLAYGROUND MODULE 3: PYTHON SORTING SIM -- */
+    let sortingArray = [45, 12, 85, 32, 56, 70, 22, 90, 18, 59];
+    let sortInterval = null;
+    let isSortingSim = false;
+    let selectedSortAlgorithm = "bubble";
+
+    function hydrateSortingBars(comparingIndices = [], sortedIndices = []) {
+      const frame = document.getElementById('py-bars-visualizer');
+      frame.innerHTML = "";
+
+      sortingArray.forEach((val, idx) => {
+        const wrap = document.createElement('div');
+        wrap.className = "flex-1 flex flex-col items-center gap-1.5";
+
+        let textClass = "text-[10px] font-mono ";
+        let barClass = "w-full rounded-t-md transition-all duration-205 h-full ";
+
+        if (comparingIndices.includes(idx)) {
+          textClass += "text-indigo-600 font-bold";
+          barClass += "bg-gradient-to-t from-indigo-505 to-indigo-650 shadow bg-indigo-500";
+        } else if (sortedIndices.includes(idx)) {
+          textClass += "text-emerald-600 font-bold";
+          barClass += "bg-gradient-to-t from-emerald-505 to-emerald-650 bg-emerald-500";
+        } else {
+          textClass += "text-neutral-450";
+          barClass += "bg-neutral-250 bg-neutral-300";
+        }
+
+        wrap.innerHTML = `
+          <span class="${textClass}">${val}</span>
+          <div class="${barClass}" style="height: ${(val / 100) * 140}px"></div>
+        `;
+        frame.appendChild(wrap);
+      });
+    }
+
+    function setSortingAlgo(alg) {
+      if (isSortingSim) return;
+      selectedSortAlgorithm = alg;
+      document.getElementById('py-btn-bubble').className = alg === 'bubble' ? "py-2 text-[11px] font-mono font-bold border rounded-lg bg-[#1c1c1a] text-white" : "py-2 text-[11px] font-mono font-bold border rounded-lg bg-white border-[#d4d4cb] text-neutral-600";
+      document.getElementById('py-btn-selection').className = alg === 'selection' ? "py-2 text-[11px] font-mono font-bold border rounded-lg bg-[#1c1c1a] text-white" : "py-2 text-[11px] font-mono font-bold border rounded-lg bg-white border-[#d4d4cb] text-neutral-600";
+
+      document.getElementById('bubble-code-block').classList.toggle('hidden', alg !== 'bubble');
+      document.getElementById('selection-code-block').classList.toggle('hidden', alg !== 'selection');
+    }
+
+    function shuffleSortingArray() {
+      if (isSortingSim) return;
+      sortingArray = Array.from({ length: 10 }, () => Math.floor(Math.random() * 85) + 12);
+      document.querySelectorAll(".py-cl").forEach(l => l.style.backgroundColor = 'transparent');
+      hydrateSortingBars();
+    }
+
+    function runSortingPlayback() {
+      if (isSortingSim) return;
+      isSortingSim = true;
+
+      let subSteps = [];
+      let tempArr = [...sortingArray];
+      const n = tempArr.length;
+
+      if (selectedSortAlgorithm === 'bubble') {
+        for (let i = 0; i < n; i++) {
+          for (let j = 0; j < n - i - 1; j++) {
+            subSteps.push({ arr: [...tempArr], act: [j, j + 1], line: 3 });
+            subSteps.push({ arr: [...tempArr], act: [j, j + 1], line: 5 });
+            if (tempArr[j] > tempArr[j + 1]) {
+              const t = tempArr[j];
+              tempArr[j] = tempArr[j + 1];
+              tempArr[j + 1] = t;
+              subSteps.push({ arr: [...tempArr], act: [j, j + 1], line: 6 });
+            }
+          }
+          subSteps.push({ arr: [...tempArr], act: [], line: 2, sortedUpTo: n - i - 1 });
+        }
+      } else {
+        // selection sort step compiler
+        for (let i = 0; i < n; i++) {
+          let minIdx = i;
+          subSteps.push({ arr: [...tempArr], act: [i], line: 3 });
+          for (let j = i + 1; j < n; j++) {
+            subSteps.push({ arr: [...tempArr], act: [i, j, minIdx], line: 5 });
+            if (tempArr[j] < tempArr[minIdx]) {
+              minIdx = j;
+              subSteps.push({ arr: [...tempArr], act: [i, j, minIdx], line: 7 });
+            }
+          }
+          // swap
+          const t = tempArr[i];
+          tempArr[i] = tempArr[minIdx];
+          tempArr[minIdx] = t;
+          subSteps.push({ arr: [...tempArr], act: [i, minIdx], line: 8, sortedUpTo: i });
+        }
+      }
+
+      let idx = 0;
+      let sortedLocked = [];
+      document.getElementById('py-play-btn').setAttribute('disabled', 'true');
+
+      sortInterval = setInterval(() => {
+        if (idx >= subSteps.length) {
+          clearInterval(sortInterval);
+          isSortingSim = false;
+          hydrateSortingBars([], Array.from({ length: 10 }, (_, k) => k));
+          document.querySelectorAll(".py-cl").forEach(l => l.style.backgroundColor = 'transparent');
+          document.getElementById('py-play-btn').removeAttribute('disabled');
+          return;
+        }
+
+        const step = subSteps[idx];
+        sortingArray = step.arr;
+        if (step.sortedUpTo !== undefined) {
+          sortedLocked.push(step.sortedUpTo);
+        }
+
+        hydrateSortingBars(step.act, sortedLocked);
+
+        // Highlight line
+        document.querySelectorAll(".py-cl").forEach(l => l.style.backgroundColor = 'transparent');
+        const prefix = selectedSortAlgorithm === 'bubble' ? 'by' : 'sy';
+        const lineEl = document.getElementById(`${prefix}-cl-${step.line}`);
+        if (lineEl) {
+          lineEl.style.backgroundColor = '#1e1b4b'; // dark purple highlight
+        }
+
+        idx++;
+      }, 350);
+    }
+
+
+    /* ==========================================================================
+       D. COLLABORATIVE DIRECT MESSAGES FORM SUBMIT
+       ========================================================================== */
+    function handleFormTransmission(event) {
+      event.preventDefault();
+      const btn = document.getElementById('form-submit-btn');
+      btn.innerText = "Transmitting message...";
+      btn.setAttribute('disabled', 'true');
+
+      setTimeout(() => {
+        document.getElementById('portfolio-contact-form').classList.add('hidden');
+        document.getElementById('form-success-alert').classList.remove('hidden');
+      }, 1400);
+    }
+
+    function resetContactForm() {
+      // restore default styles
+      document.getElementById('form-name').value = "";
+      document.getElementById('form-email').value = "";
+      document.getElementById('form-message').value = "";
+      
+      const btn = document.getElementById('form-submit-btn');
+      btn.innerText = "Transmit Message";
+      btn.removeAttribute('disabled');
+
+      document.getElementById('portfolio-contact-form').classList.remove('hidden');
+      document.getElementById('form-success-alert').classList.add('hidden');
+    }
+  </script>
+</body>
+</html>
